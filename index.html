@@ -1,11 +1,130 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <title>Home is...DES 157B!</title>
+
+    <!-- Normalize CSS for browser compatability -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <!-- Add link to any google fonts used here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Federo&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- My Styles -->
+    <link href="styles.css" rel="stylesheet">
+
+    <!-- Meta tag for mobile support -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Erin Park Portal Page</title>
+
+    <!-- My Script -->
+    <script src="script.js" defer></script>
+
 </head>
+
 <body>
-    <h1>Erin's Portal Page</h1>
+
+    <div id="container">
+
+        <header>
+            <h1>Erin Park | DES 157B - Interactive Media III - Spring 2026</h1>
+            <img id="switch" src="images/open.png" alt="open sign">
+        </header>        
+        
+        <main>
+            <!--this is for the interactive banner-->
+            <div id="header">
+                <svg viewBox="0 -80 500 180" width="440" height="180" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <path id="curve" d="M 50,80 Q 250,-80 450,80" />
+                    </defs>
+                    <text>
+                        <textPath href="#curve" startOffset="50%" text-anchor="middle">
+                            cafe erinspänner
+                        </textPath>
+                    </text>
+                </svg>
+
+                <h2>home is... a third space filled with loved ones</h2>
+            </div>
+
+            <div id="banner">
+                <img id="column1"  class="hover" width=190 src="images/americano.png" alt="iced americano">
+                <img id="column2" class="hover" width=230 src="images/teapot.png" alt="pot of tea">
+                <img id="column3" class="hover" width=270 src="images/latte.png" alt="latte art">
+                <img id="column4" class="hover" width=160 src="images/matcha.png" alt="mango matcha">
+            </div>
+
+            <div id="menu">
+                <!---Links here--->
+            </div>
+
+            <!---Move into javascript-->
+
+            <!-- <section id="projects">
+
+                <nav>
+                    <ol>
+                        <li><a href="#">Blockbuster Video</a></li>
+                        <li><a href="#">Check Yourself</a></li>
+                        <li><a href="#">Library Liberty</a></li>
+                    </ol>
+                </nav>
+                <h3>Toolkit</h3>
+                <nav>
+                    <ol>
+                        <li><a href="#">Friends List</a></li>
+                    </ol>
+                </nav>
+
+            </section>
+
+            <section id="research">
+                <h3>Research</h3>
+                <nav>
+                    <ul>
+                        <li><a href="#">Brainstorm</a></li>
+                        <li><a href="#">Comparative Analysis</a></li>
+                        <li><a href="#">Annotated Bibliography</a></li>
+                        <li><a href="#">Feasibility Report</a></li>
+                        <li><a href="#">Usability Results</a></li>
+                    </ul>
+                </nav>
+
+            </section>
+
+            <section id="development">
+                <h3>Development</h3>
+                <nav>
+                    <ul>
+                        <li><a href="#">Proposal</a></li>
+                        <li><a href="#">Sketches</a></li>
+                        <li><a href="#">User Flows</a></li>
+                        <li><a href="#">Design Progress</a></li>
+                        <li><a href="#">LoFi Sketches</a></li>
+                        <li><a href="#">Version 1</a></li>
+                        <li><a href="#">Usability Test</a></li>
+                        <li><a href="#">Version 2</a></li>
+                    </ul>
+                </nav>
+            </section>
+
+            <section id="capstone">
+                <h3>Capstone</h3>
+                <nav>
+                    <ul>
+                        <li><a href="#">Case Study</a></li>
+                        <li><a href="#">Project</a></li>
+                    </ul>
+                </nav>
+            </section> -->
+
+        </main>
+
+    </div>
+
 </body>
+
 </html>
