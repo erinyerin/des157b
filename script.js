@@ -6,6 +6,12 @@
     const banner = document.querySelector('#banner');
     const curvetext = document.querySelector('textPath');
     const hover = document.querySelectorAll('.hover')
+    const column1 = document.querySelector('#column1')
+    const column2 = document.querySelector('#column2')
+    const column3 = document.querySelector('#column3')
+    const column4 = document.querySelector('#column4')
+    const closeMenu1 = document.querySelector('#closeMenu1')
+
     let mode = 'light';
     console.log(button, body, banner, curvetext);
 
@@ -55,5 +61,50 @@
             this.style.transform = 'scale(1)';
         });
     });
+
+    column1.addEventListener('click', function(){
+        menu1.classList.remove('hidden');
+        menu1.classList.add('slide-up');
+        menu1.classList.remove('slide-down');
+
+        closeMenu1.addEventListener('click', function(){
+            menu1.classList.add('slide-down');
+            menu1.classList.remove('slide-up');
+        })
+    })
+
+    column2.addEventListener('click', function(){
+        menu2.classList.remove('hidden');
+        menu2.classList.add('slide-up');
+        menu2.classList.remove('slide-down');
+
+        closeMenu2.addEventListener('click', function(){
+            menu2.classList.add('slide-down');
+            menu2.classList.remove('slide-up');
+        })
+    })
+
+    column3.addEventListener('click', function(){
+        menu3.classList.remove('hidden');
+        menu3.classList.add('slide-up');
+        menu3.classList.remove('slide-down');
+
+        closeMenu3.addEventListener('click', function(){
+            menu3.classList.add('slide-down');
+            menu3.classList.remove('slide-up');
+        })
+    })
+
+    column4.addEventListener('click', function(){
+        menu4.classList.remove('hidden');
+        menu4.classList.add('slide-up');
+        menu4.classList.remove('slide-down');
+
+        closeMenu4.addEventListener('click', function(){
+            menu4.classList.add('slide-down');
+            menu4.classList.remove('slide-up');
+        })
+    })
+
 
 })()

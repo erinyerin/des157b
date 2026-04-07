@@ -47,7 +47,7 @@ h1, h2, h3, h4, h5, h6 {
 body {
     background-color: #FFFCF3;
     color:black ;
-    transition: all 2s;
+    transition: all 1s;
 }
 
 body.switch {
@@ -55,13 +55,17 @@ body.switch {
     color: white;
 }
 
+body.switch section{
+    color: black;
+}
+
 textPath.switch { 
     fill: white;
-    transition: all 2s;
+    transition: all 1s;
 }
 
 textPath{
-    transition: all 2s;
+    transition: all 1s;
 }
 
 #container {
@@ -127,4 +131,75 @@ text{
 h2{
     font-size: 32px;
 }
+
+section{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 330px;
+    height: 490px;
+    background-image: url(images/menucard.png);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    padding: 2em;
+}
+
+.hidden{
+    display: none;
+}
+
+@keyframes slideUp {
+    from { transform: translate(-50%, 100vh); }
+    to   { transform: translate(-50%, -50%); }
+}
+
+@keyframes slideDown {
+    from { transform: translate(-50%, -50%); }
+    to { transform: translate(-50%, 100vh);  }
+}
+
+.slide-up {
+    animation: slideUp 0.4s ease forwards;
+}
+
+.slide-down {
+    animation: slideDown 0.4s ease forwards;
+}
+
+section h2{
+    font-family: "Old Standard TT", serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 32px;
+    text-align: center;
+    margin: 1em 0;
+}
+
+section h3{
+    font-family: "Federo", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+section button{
+    all: unset;
+    cursor: pointer;
+    float: right;
+}
+
+section ol{
+    font-family: "Federo", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.5em;
+    padding-bottom: 1em;
+}
+
+section a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
 
