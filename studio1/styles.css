@@ -1,0 +1,63 @@
+/* // <weight>: Use a value from 100 to 700
+// <uniquifier>: Use a unique and descriptive class name
+
+.antonio-<uniquifier> {
+  font-family: "Antonio", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
+body{
+    background-color: black;
+    color: white;
+}
+
+#container{
+    max-width: 1200 px;
+    display: flex;
+    justify-content: space-between;
+    padding: 100px;
+}
+
+#text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h1{
+    font-family: "Antonio", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 60px;
+}
+
+h2{
+    font-family: "Antonio", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 32px;
+}
+
+p{
+    font-family: "Antonio", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 24px;
+}
+
+
+#videoWrapper{
+    max-width: 350px;
+    max-height: auto;
+
+}
+
+video{
+    max-width: 100%;
+}
+

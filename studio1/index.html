@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockbuster Video!</title>
+
+    <!-- Normalize CSS for browser compatability -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <!-- Add link to any google fonts used here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap" rel="stylesheet">
+
+    <!-- My Styles -->
+    <link href="styles.css" rel="stylesheet">
+
+    <!-- Meta tag for mobile support -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- My Script -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="container">
+
+        <div id="text">
+            <div>
+                <h1>PETER CAT RECORDING CO.</h1>
+                <h2>Live in Oakland | October 2023</h2>
+            </div>
+
+            <p id="lyrics">
+                This is how it ends...
+            </p>
+        </div>
+
+        <div id="videoWrapper">
+            <video id="myVideo" poster="images/poster.jpg" controls muted loop autoplay playsinline>
+                <source src="media/IMG_7614.webm" type="video/webm">
+                <source src="media/IMG_7614.mp4" type="video/mp4">
+
+                <p>Your browser doesn't support HTML5 video. 
+                Here is a <a href="media/IMG_7614.webm">link to the video</a> instead.</p>
+
+
+            </video>
+        </div>
+
+    </div>
+
+
+    
+</body>
+</html>
