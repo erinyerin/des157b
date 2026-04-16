@@ -14,7 +14,7 @@ body{
 }
 
 #container{
-    max-width: 1200 px;
+    max-width: 1200px;
     display: flex;
     justify-content: space-between;
     padding: 100px;
@@ -28,7 +28,6 @@ body{
 
 h1{
     font-family: "Antonio", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 800;
     font-style: normal;
     font-size: 60px;
@@ -36,7 +35,6 @@ h1{
 
 h2{
     font-family: "Antonio", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 800;
     font-style: normal;
     font-size: 32px;
@@ -44,7 +42,6 @@ h2{
 
 p{
     font-family: "Antonio", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
     font-size: 24px;
@@ -53,7 +50,6 @@ p{
 
 #videoWrapper{
     max-width: 350px;
-    max-height: auto;
 
 }
 
