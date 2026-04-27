@@ -1,0 +1,241 @@
+/* .nanum-pen-script-regular {
+  font-family: "Nanum Pen Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+} */
+
+/* CSS Resets */
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+/* end resets */
+body{
+    background-color: #E0F6FF;
+    font-family: "Nanum Pen Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #1f1f1f;
+}
+
+#container{
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    justify-content: right;
+    margin-top: 1em;
+}
+
+nav a{
+    padding: 0.5em;
+    text-decoration: none;
+    color: #1f1f1f;
+    border: solid 2px #1f1f1f;
+    border-width: 2px 4px 4px 2px;
+    border-radius: 30px;
+    font-size: 18px;
+}
+
+h1{
+    font-size: 48px;
+    text-align: center;
+}
+
+#datapoints img{
+    width: 46px;
+    height: 46px;
+}
+
+#stickers{
+    position: absolute;
+    top: 440px;
+    left: 50%;
+    transform: translate(-50%, 0)
+}
+
+#card{
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    width: 500px;
+    height: 350px;
+    background-image: url(images/card.png);
+    margin: auto;
+    box-shadow: -4px 4px 10px 0 rgba(0, 0, 0, 0.25);
+}
+
+#data{
+    margin: 3em;
+}
+
+#data h2{
+    font-size: 36px;
+    text-align: center;
+}
+
+#data p{
+    font-size: 24px;
+}
+
+button{
+    all: unset;
+    cursor: pointer;
+    padding: 2em;
+    font-size: 24px;
+    float: right;
+}
+
+/* up n down animations */
+.hidden{
+    display: none;
+}
+
+@keyframes slideUp {
+    from { transform: translate(-50%, 100vh); }
+    to   { transform: translate(-50%, -50%); }
+}
+
+@keyframes slideDown {
+    from { transform: translate(-50%, -50%); }
+    to { transform: translate(-50%, 100vh);  }
+}
+
+.slide-up {
+    animation: slideUp 0.4s ease forwards;
+}
+
+.slide-down {
+    animation: slideDown 0.4s ease forwards;
+}
+
+
+/* data points positioning */
+#point1{
+    position: absolute;
+    top: 457px;
+    left: 198px;
+}
+
+#point2{
+    position: absolute;
+    top: 441px;
+    left: 243px;
+    transform: rotate(25deg);
+}
+
+#point3{
+    position: absolute;
+    top: 393px;
+    left: 244px;
+    transform: rotate(5deg);
+}
+
+#point4{
+    position: absolute;
+    top: 396px;
+    left: 280px;
+    transform: rotate(30deg);
+}
+
+#point5{
+    position: absolute;
+    top: 343px;
+    left: 281px;
+    transform: rotate(-2deg);
+}
+
+#point6{
+    position: absolute;
+    top: 357px;
+    left: 318px;
+    transform: rotate(3deg);
+}
+
+#point7{
+    position: absolute;
+    top: 280px;
+    left: 343px;
+    transform: rotate(30deg);
+}
+
+#point8{
+    position: absolute;
+    top: 310px;
+    left: 365px;
+    transform: rotate(-4deg);
+}
+
+#point9{
+    position: absolute;
+    top: 270px;
+    left: 380px;
+    transform: rotate(30deg);
+}
+
+#point10{
+    position: absolute;
+    top: 300px;
+    left: 400px;
+    transform: rotate(-5deg);
+}
+
+#point11{
+    position: absolute;
+    top: 250px;
+    left: 423px;
+    transform: rotate(30deg);
+}
+
+#point12{
+    position: absolute;
+    top: 224px;
+    left: 457px;
+    transform: rotate(-6deg);
+}
+
+#point13{
+    position: absolute;
+    top: 214px;
+    left: 593px;
+    transform: rotate(25deg);
+}
+
+#point14{
+    position: absolute;
+    top: 295px;
+    left: 773px;
+    transform: rotate(-7deg);
+}
+
+#point15{
+    position: absolute;
+    top: 307px;
+    left: 832px;
+    transform: rotate(35deg);
+}
+
+#point16{
+    position: absolute;
+    top: 381px;
+    left: 853px;
+    transform: rotate(14deg);
+}
+
+
