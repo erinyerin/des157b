@@ -2,94 +2,94 @@
     "Dinil" : {
         "where" : "Dinil's house",
         "when" : "9:00 AM",
-        "how i know" : "KDVS"
+        "how" : "Boyfriend"
     },
     "Audie" : {
         "where" : "West Quad - Parade Route",
         "when" : "9:50 AM",
-        "how i know" : "Housemate"
+        "how" : "Housemate"
     },
     "Talia" : {
         "where" : "Veihmeyer Hall - Parade Route",
         "when" : "10:55 AM",
-        "how i know" : "Family"
+        "how" : "Family"
     },
 
     "Henry" : {
         "where" : "Sprocket Bikeway",
         "when" : "11:05 AM",
-        "how i know" : "KDVS"
+        "how" : "KDVS"
     },
 
     "Elise" : {
         "where" : "Meyer Hall - Chick Exhibit",
         "when" : "11:20 AM",
-        "how i know" : "First grade classmate"
+        "how" : "First grade classmate"
     },
 
     "Kiran" : {
         "where" : "U Center - Doxie Derby",
         "when" : "11:45 AM",
-        "how i know" : "Elise's brother"
+        "how" : "Elise's brother"
     },
 
     "Tristan" : {
         "where" : "Cruess Courtyard - Fashion Show",
         "when" : "12:50 PM",
-        "how i know" : "Freshman year dorms"
+        "how" : "Freshman year dorms"
     },
 
     "Cesar" : {
         "where" : "Cruess Courtyard - Fashion Show",
         "when" : "12:50 PM",
-        "how i know" : "Aggie Studios"
+        "how" : "Aggie Studios"
     },
 
     "Edyn" : {
         "where" : "Cruess Courtyard - Fashion Show",
         "when" : "1:20 PM",
-        "how i know" : "Design Interactive"
+        "how" : "Design Interactive"
     },
 
     "Cal" : {
         "where" : "Cruess Courtyard - Fashion Show",
         "when" : "1:25 PM",
-        "how i know" : "ASUCD IRL"
+        "how" : "ASUCD IRL"
     },
     
     "Jess" : {
         "where" : "Cruess Courtyard",
         "when" : "2:10 PM",
-        "how i know" : "Design Interactive"
+        "how" : "Design Interactive"
     },
 
     "KG" : {
         "where" : "UC Davis Fire Department",
         "when" : "2:50 PM",
-        "how i know" : "Housemate"
+        "how" : "Housemate"
     },
 
     "Chloe" : {
         "where" : "Yang Kee Dumpling",
         "when" : "5:15 PMM",
-        "how i know" : "Family"
+        "how" : "Family"
     },
 
     "Izzy" : {
         "where" : "Dinil's house",
         "when" : "8:20 PM",
-        "how i know" : "KDVS"
+        "how" : "KDVS"
     },
 
     "Teddy" : {
         "where" : "Dinil's house",
         "when" : "9:15 PM",
-        "how i know" : "KDVS"
+        "how" : "KDVS"
     },
 
     "Pookie" : {
         "where" : "Dinil's house",
         "when" : "10:20 PM",
-        "how i know" : "KDVS"
+        "how" : "KDVS"
     }
 }

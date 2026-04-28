@@ -61,6 +61,7 @@ h1{
 #datapoints img{
     width: 46px;
     height: 46px;
+    cursor: pointer;
 }
 
 #stickers{
