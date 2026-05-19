@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capstone Project Feasibility Report</title>
+
+    <!-- Normalize CSS for browser compatability -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <!-- Add link to any google fonts used here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Federo&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- My Styles -->
+    <link href="styles.css" rel="stylesheet">
+
+    <!-- Meta tag for mobile support -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+    <h1>Feasibility Report</h1>
+
+    <p>
+        I imagine the most difficult technical portion of my project will be coding the branching dialogue trees. I have been looking at ways others have implemented this in HTML and JavaScript, such as <a href="https://www.reddit.com/r/gamedev/comments/18ell6l/implementing_branching_dialogue_in_javascript/">this</a> Reddit post and <a href="https://etodd.io/2014/05/16/the-poor-mans-dialogue-tree/">this</a> blog post. I also chatted with Zahra about any ideas she had on how to do this, and she pointed me towards <a href="https://www.flickgame.org/">flickgame</a>, which is a website that allows you to create a branching pages depending on what color on the screen you click on. Additional libraries I have been looking at are <a href="https://www.jointjs.com/">JointJS</a>, which allows you to create branching flowcharts, and <a href="https://coherent-labs.com/blog/uitutorials/dialogue-tree/">Coherent Gameface</a>, which is a game UI library. 
+    </p>
+
+    <p>
+        These are all super interesting and gave me a good idea of the different possibilities for implementing the dialogue, but I think the most elegant and easiest way might be to use key value pairs in a JSON file and use async JS to load and display the data. I will have one JSON file that assigns a key to each dialogue blurb - for example, 1A, 1B, based on row and position. I will also have a second JSON file that uses the keys to map the relationships, e.g. if the user selects 1B, respond with 2C. Bill emphasized that there should be one record for each relationship, so there might be multiple records for each prompt if it branches into different options. 
+    </p>
+
+    <p>
+        My immediate next steps will be to create the JSON files with the key-value pairs, and by next Tuesday, I aim to have the messaging functionality ready for user testing. 
+    </p>
+</body>
+</html>
