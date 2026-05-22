@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Liberty</title>
+
+    <!-- Normalize CSS for browser compatability -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <!-- My Styles -->
+    <link href="styles.css" rel="stylesheet">
+
+    <!-- JQuery Library -->
+    <script 
+        src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" 
+        crossorigin="anonymous" defer>
+    </script>
+
+    <!-- jQuery UI -->
+    <script 
+        src="https://code.jquery.com/ui/1.14.2/jquery-ui.min.js" 
+        integrity="sha256-mblSWfbYzaq/f+4akyMhE6XELCou4jbkgPv+JQPER2M=" crossorigin="anonymous" defer>
+    </script>
+
+    <!-- Granim-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/granim/2.0.0/granim.min.js"></script>
+
+    <!-- Your script here -->
+    <script src="script.js" defer></script>
+
+
+</head>
+<body>
+    <canvas id="granim-canvas"></canvas>
+    <h1>Help! I've fallen apart and I can't get up!</h1>
+    <p>Can you piece me back together? Drag my features back to my face and watch the world become brighter.</p>
+    <div id="face">
+        <p> </p>
+    </div>
+
+    <div id="pieces">
+        <img id="lefteye" class="piece" src="images/lefteye.png" alt="left eye">
+        <img id="righteye" class="piece" src="images/righteye.png" alt="right eye">
+        <img id="nose" class="piece" src="images/nose.png" alt="nose">
+        <img id="mouth" class="piece" src="images/mouth.png" alt="mouth">
+    </div>
+
+    <footer>
+        Libraries used: <a href="https://jqueryui.com/droppable/">jQuery UI</a> & <a href="https://sarcadass.github.io/granim.js/">Granim</a>
+    </footer>
+
+</body>
+</html>
