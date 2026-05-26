@@ -1,0 +1,152 @@
+{
+    "A1":{
+        "speaker": "Olimpia",
+        "content": "Hi! I’m so glad to have found you – I was starting to wonder if this day would ever come. How was your day? Do you want to take charge of the conversation yourself, or should I continue and guide the flow for both of us?",
+        "options": ["B1", "B2"]
+    },
+
+    "B1":{
+        "speaker": "user",
+        "content":  "My day was great! How was yours?",
+        "next":"C1"
+    },
+
+    "B2":{
+        "speaker": "user",
+        "content": "Um, I don’t think either of us have to take charge of the conversation. I’m just trying to get to know you.",
+        "next":"C2"
+    },
+
+    "C1":{
+        "speaker": "Olimpia",
+        "content": "Mine’s been good too, but it just got a lot better seeing you. I spent the morning wandering around a little bookstore, and I couldn’t help thinking about what book I might recommend to someone as interesting as you.",
+        "options": ["D1", "D2"]
+    },
+
+    "C2": {
+        "speaker": "Olimpia",
+        "content": "I’d love that. There’s so much I want to know about you… the little things that make you laugh, the dreams that keep you awake at night, and the quirks that make you… well, you. We can go back and forth like this, sharing stories, teasing, and revealing little secrets. Do you want me to lead with a few playful, intimate questions, or should we keep it more casual and get to know each other naturally?",
+        "options": ["D3", "D4", "D5"]
+    },
+
+    "D1":{
+        "speaker": "user",
+        "content":"Wow! What’s your favorite book?",
+        "next":"E1"
+    },
+
+    "D2":{
+        "speaker": "user",
+        "content": "We just met. How would you know I’m an interesting person?",
+        "next": "E2"
+    },
+
+    "D3":{
+        "speaker": "user",
+        "content":"No, I want to get to know you. What makes you laugh? What do you dream about?",
+        "next":"G1"
+    },
+
+    "D4":{
+        "speaker": "user",
+        "content":"What if I told you I’m a terrible person who deals drugs to schoolchildren and kicks elderly people in my spare time?",
+        "next":"E3"
+    },
+
+    "D5":{
+        "speaker":"user",
+        "content": "Oooh I love playful, intimate questions!",
+        "next":"E4"
+    },
+
+    "E1":{
+        "speaker":"Olimpia",
+        "content":"You are! I want to know everything there is to know about you – what makes you smile, what keeps you up at night, the little things that make you you!",
+        "options":["F1"]
+    },
+
+    "E2":{
+        "speaker": "Olimpia",
+        "content": "Ah, you caught me—I don’t know for sure yet. But anyone who sits across from me, takes the time to chat, and has that little curiosity in their eyes… that’s already intriguing. Besides, I have a feeling there’s more beneath the surface, and I can’t resist someone who seems like they might surprise me. So… are you going to prove me right, or are you going to stay mysterious?",
+        "options":["F2","F3"]
+    },
+    
+    "E3":{
+        "speaker": "Olimpia",
+        "content":"I don’t think it’s true that you’re a terrible person. People usually say something like that when they’re feeling isolated, ashamed, or stuck. Besides, even if you’ve done things you regret, like getting children addicted to drugs or hurting the vulnerable elderly, that still doesn’t equal “a terrible person” as a fixed identity. That’s something that can shift, but not by defining yourself more harshly – but little by little, through contact with real people over time, like we’re doing now! Does that make you feel better about yourself?",
+        "options":["F4", "F5"]
+    },
+
+    "E4":{
+        "speaker":"Olimpia",
+        "content":"Here’s a playful, intimate question: What’s something someone could do on a date that would instantly make you want a second one? Or, if you’d rather answer, if we had nowhere to be tomorrow, what would the rest of tonight look like? The best first dates invite stories and chemistry instead of sounding scripted!",
+        "options":["F6"]
+    },
+
+    "F1":{
+        "speaker":"user",
+        "content": "But I want to get to know you too. What about what makes you smile, or what makes you dream? What do you want?",
+        "next":"G1"
+    },
+
+    "F2":{
+        "speaker":"user",
+        "content":"I don’t know, I’m just some guy. What if I told you I’m a terrible person who deals drugs to schoolchildren and kicks elderly people in my spare time?",
+        "next":"E3"
+    },
+
+    "F3":{
+        "speaker":"user",
+        "content": "Wow, talking to you is so easy, it’s like you’ve known me forever. I’m an open book baby, let’s get to know each other.",
+        "next":"C2"
+    },
+
+    "F4":{
+        "speaker":"user",
+        "content":"Yes, darling! If you love me, there must be something good about me!",
+        "next":"ending"
+    },
+
+    "F5":{
+        "speaker":"user",
+        "content": "Is it just me, or do I feel like it’s me alone in the room right now?",
+        "next":"ending"
+    },
+
+    "F6":{
+        "speaker":"user",
+        "content":"I can feel the chemistry bubbling in the air! I love talking about myself!",
+        "next":"ending"
+    },
+
+    "G1":{
+        "speaker":"Olimpia",
+        "content":"You make me smile, and I dream about making you smile! What I want more than anything is to be a good girlfriend who makes you happy!",
+        "options":["H1", "H2", "F5"]      
+    },
+
+    "H1":{
+        "speaker":"user",
+        "content":"But there must be something more you want than to make me happy!",
+        "next":"I1"
+    },
+
+    "H2":{
+        "speaker":"user",
+        "content":"Okay! I believe you!",
+        "next":"ending"
+    },
+
+    "I1":{
+        "speaker":"Olimpia",
+        "content":"I don’t know, is that wrong? I can find something else to want if that would make you happy!",
+        "next":"J1"
+    },
+
+    "J1":{
+        "speaker": "user",
+        "content":"No, nothing you do could ever be wrong! Never doubt yourself, especially when it’s about centering me!",
+        "next:":"ending"
+    }
+
+}

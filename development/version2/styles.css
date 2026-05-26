@@ -69,6 +69,8 @@ a, a:visited, a:hover, a:active {
 
 header{
     position: sticky;
+    top: 0;
+    background-color: #222222;
 }
 
 header #header{
@@ -106,7 +108,7 @@ header #header{
     font-size: 14px;
     font-family: "Old Standard TT", serif;
     font-weight: 400;
-    padding-top: 0.5em;
+    padding: 0.5em 0;
 }
 
 .receivedMessage{
@@ -137,6 +139,7 @@ header #header{
     width: 100%;
     position: sticky;
     bottom: 0;
+    background-color:#222222
 }
 
 #textBox{
@@ -177,4 +180,5 @@ header #header{
 #dialogueOptions li{
     text-decoration: underline;
     cursor: pointer;
+    margin: 1em;
 }
