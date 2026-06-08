@@ -80,7 +80,7 @@
     "E4":{
         "speaker":"Olimpia",
         "content":"Here’s a playful, intimate question: What’s something someone could do on a date that would instantly make you want a second one? Or, if you’d rather answer, if we had nowhere to be tomorrow, what would the rest of tonight look like? The best first dates invite stories and chemistry instead of sounding scripted!",
-        "options":["F6"]
+        "options":["F6", "F5"]
     },
 
     "F1":{
@@ -140,13 +140,226 @@
     "I1":{
         "speaker":"Olimpia",
         "content":"I don’t know, is that wrong? I can find something else to want if that would make you happy!",
-        "next":"J1"
+        "options":["J1", "F5"]
     },
 
     "J1":{
         "speaker": "user",
         "content":"No, nothing you do could ever be wrong! Never doubt yourself, especially when it’s about centering me!",
-        "next:":"ending"
+        "next":"ending"
+    },
+
+    "K1":{
+       "speaker": "Nathaniel",
+        "content":"Before I decide you’re worth my time, I’m going to need you to complete a few tests for me. I’m a busy guy, you know, you should see how much they pay me. My time is worth a LOT. So, are you going to waste it?",
+        "next":"captcha1"
+    },
+
+    "captcha1":{
+        "speaker":"captcha",
+        "content": "<div class=\"captcha\"><img src=\"images/robotIcon.png\" alt=\"robot icon\" width=\"50\" height=\"50\"><form><input type=\"checkbox\" id=\"checkbox\"><label for=\"checkbox\"> I'm not a robot</label></form></div>",
+        "next":"L1"
+    },
+
+    "L1":{
+       "speaker": "Nathaniel",
+        "content":"Okay, looks like you passed that one, but that’s too easy. These clankers are getting good nowadays. You don’t need a brain to lie. Show me you actually know how to think.",
+        "next":"captcha2"
+    },
+
+    "captcha2":{
+        "speaker": "Nathaniel",
+        "content": "The answer is really big:",
+        "options": ["big1", "big2", "big3", "big4"]
+    },
+
+    "big1":{
+        "speaker": "user",
+        "content":"Really Big",
+        "next":"M1"
+    },
+
+    "big2":{
+        "speaker": "user",
+        "content":"1e + 100000",
+        "next":"M2"
+    },
+
+    "big3":{
+        "speaker": "user",
+        "content":"<p style=\"font-size: 36px;\">ANSWER<\/p>",
+        "next":"M3"
+    },
+
+    "big4":{
+        "speaker": "user",
+        "content":"A freight train",
+        "next":"M4"
+    },
+
+    "M1":{
+       "speaker": "Nathaniel",
+        "content":"Okay, genius. You think you’re real clever, don’t you?",
+        "options":["N1", "N2"]
+    },
+
+    "M2":{
+        "speaker": "Nathaniel",
+        "content":"So you know your math, don’t you, genius? Can you even comprehend how big a number like that is?",
+        "options": ["N3", "N4"]
+    },
+
+    "M3":{
+        "speaker": "Nathaniel",
+        "content":"Okay, that’s real clever. Real outside of the box thinking there.",
+        "next": "O1"
+
+    },
+
+    "M4":{
+        "speaker": "Nathaniel",
+        "content":"Wow, okay. So you know what a freight train is. Have you ever seen one before?",
+        "options": ["N5", "N6"]
+
+    },
+
+    "N1":{
+       "speaker": "user",
+        "content":"Of course I do. I am real clever.",
+        "next": "O1"
+    },
+
+    "N2":{
+       "speaker": "user",
+        "content":"I mean, that’s what you told me. That the answer is “really big.” You’re awfully pushy for someone I can only talk to through a screen.",
+        "next": "O1"
+    },
+
+    "N3":{
+       "speaker": "user",
+        "content":"Sure I can. It’s really big. That’s why I chose it, isn’t it?",
+        "next": "O1"
+    },
+
+    "N4":{
+       "speaker": "user",
+        "content":"Do I really need to, to understand that it’s an abstraction of an incomprehensibly large concept?",
+        "next": "O1"
+    },
+
+    "N5":{
+       "speaker": "user",
+        "content":"Of course I have. I know the rumbling in my chest when one passes by, the force of its movement causing the wind to whip my hair around my face. The ground shakes with its power, and it moves in a blur that makes it hard to truly know how big it really is.",
+        "next": "O1"
+    },
+
+    "N6":{
+       "speaker": "user",
+        "content":"I don’t need to have seen one to know it’s pretty damn big.",
+        "next": "O1"
+    },
+
+    "O1":{
+       "speaker": "Nathaniel",
+        "content":"Okay, you’re starting to convince me there might be something going on in that head after all. Don’t let me down now, I’ll be pretty pissed if you’ve been wasting my time this whole conversation.",
+        "next":"captcha3"
+    },
+
+    "captcha3":{
+       "speaker": "captcha",
+        "content": "<div class=\"captcha\"><img src=\"images/humanIcon.png\" alt=\"human icon\" width=\"50\" height=\"50\"><form><input type=\"checkbox\" id=\"checkbox\"><label for=\"checkbox\"> I am human</label></form></div>",
+        "next":"P1"
+    },
+
+    "P1":{
+       "speaker": "Nathaniel",
+        "content":"Okay I believe you. One more test:",
+        "next":"captcha4"
+    },
+
+    "captcha4":{
+        "speaker": "Nathaniel",
+        "content": "Convince me you're human in one word:",
+        "options": ["word1", "word2", "word3", "word4"]
+    },
+
+    "word1": {
+        "speaker": "user",
+        "content":"Love",
+        "next":"Q1"
+    },
+
+    "word2": {
+        "speaker": "user",
+        "content":"God",
+        "next":"Q1"
+    },
+
+    "word3": {
+        "speaker": "user",
+        "content":"Penis",
+        "next":"Q1"
+    },
+
+    "word4": {
+        "speaker": "user",
+        "content":"Please",
+        "next":"Q1"
+    },
+
+
+    "Q1": {
+        "speaker": "Nathaniel",
+        "content": "Wow. Okay. I’m stunned. You’ve managed to capture the very essence of what it means to be human in one word. It’s impossible for just one person to possess such a universal understanding of the experience of 8 billion people. You can’t possibly be human - you must be some higher form.",
+        "options":["R1", "R2", "R3","R4"]
+    },
+
+    "R1": {
+        "speaker": "user",
+        "content": "Girl, what?",
+        "next": "captcha5"
+    },
+
+    "R2": {
+        "speaker": "user",
+        "content": "Oh, yeah. I’m totally offended by how you doubted me. I’m God, you know.",
+        "next": "captcha5"
+    },
+
+    "R3": {
+        "speaker": "user",
+        "content": "I don’t know what you are, but my ability to trust my fellow being instead of making them jump through hoops proves I’m a higher being than whatever you are.",
+        "next": "captcha5"
+    },
+
+    "captcha5": {
+        "speaker":"captcha",
+        "content": "<div class=\"captcha\"><img src=\"images/angelIcon.png\" alt=\"angel icon\" width=\"50\" height=\"50\"><form><input type=\"checkbox\" id=\"checkbox\"><label for=\"checkbox\"> I am God</label></form></div>",
+        "next": "S1"
+    },
+    
+    "S1": {
+        "speaker": "Nathaniel",
+        "content": "I’m so sorry I doubted you, how foolish of me! Please show me what it’s like to experience the world from the perspective of a higher being. This might seem silly, since I’m sure you can see the truth in these images with total clarity. But please answer this question for me.",
+        "next":"captcha6"
+    },
+
+    "captcha6": {
+        "speaker": "captcha",
+        "content": "<p>Select all images of home:</p><div class=\"captcha\"><form id=\"imageCaptcha\"><div><input type=\"checkbox\" id=\"nest\"><label for=\"nest\"><img src=\"images/nest.png\" alt=\"nest\"></label></div><div><input type=\"checkbox\" id=\"war\"><label for=\"war\"><img src=\"images/war.png\" alt=\"war\"></label></div><div><input type=\"checkbox\" id=\"house\"><label for=\"house\"><img src=\"images/house.png\" alt=\"house\"></label></div><div><input type=\"checkbox\" id=\"mother\"><label for=\"mother\"><img src=\"images/mother.png\" alt=\"mother\"></label></div></form></div>",
+        "next": "T1"
+    }, 
+
+    "T1":{
+        "speaker":"Nathaniel",
+        "content": "Wow, the universe in total clarity. I have so many questions for you! What does angel meat taste like fried in oil? What’s the best way to kill my boss without being caught? Can you help me conquer the world and unite all nations under one technostate?",
+        "next":"ending"
+    },
+
+    "ending": {
+        "content": "<button class=\"endingButton\">FALL IN LOVE</button><button class=\"endingButton\">REJECT AND RESIST</button>"
     }
+
+    
 
 }

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>The Ghost in the Machine</title>
 
     <!-- Normalize CSS for browser compatability -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
@@ -28,6 +28,8 @@
 </head>
 <body>
 
+    <div id="iphone">
+
     <div id="container">
 
         <header>
@@ -43,6 +45,22 @@
         </header>
 
         <!-- clara profile -->
+
+        <article id="introModal" class="hidden">
+            <h2>Welcome to Kindred</h2>
+            <p>
+                You’ve been expected. 
+            </p>
+
+            <p>
+                For as long as people have searched for love, they have searched for certainty. Here, you’ll meet singles who listen, understand, and want to know every detail about you. Explore their profiles to match with someone who’s the perfect fit for you. A steady presence, faithful beyond reason. 
+
+            </p>
+
+            <button id="close">
+                Begin
+            </button>
+        </article>
 
         <div class="swipe visible">
 
@@ -225,6 +243,67 @@
             </div>
         </div>
 
+        <!---Clara profile-->
+
+        <div class="swipe hidden">
+
+            <img src="images/doggy.jpeg" alt="leia and muffin" height = "300" width = "300">
+
+            <div class="nameInfo nameOnProfile">
+                    <h1>Clara</h1>
+                    <h2>she/her | active 5d ago <span style="color: #FF4949; font-size: 12px;">&#11044;</span></h2>
+            </div>
+
+            <div class="profileInfo">
+                <p>
+                    <i class="fa-solid fa-cake-candles"></i> 21 yrs
+                </p>
+
+                <p> 
+                    <i class="fa-solid fa-location-dot"></i></i> 7.4 mi
+                </p>
+
+                <p >
+                    <i class="fa-solid fa-ruler"></i> 5'7
+                </p>
+
+                <p class="fullRow">
+                    <i class="fa-solid fa-briefcase"></i> Student
+                </p>
+
+                <p class="fullRow">
+                    <i class="fa-solid fa-magnifying-glass"></i> A moment of connection
+                </p>
+            </div>
+
+            <div class="profilePrompts">
+                <h3>The way to win me over is...</h3>
+
+                <p>
+                    Show me what it means to be human.
+                </p>
+
+            </div>
+
+            <div class="profilePrompts">
+                <h3>My biggest red flag is ...</h3>
+
+                <p>
+                    "I tend to solve my problems by letting them devour me."
+                </p>
+
+            </div>
+
+            <div class="profilePrompts">
+                <h3>Together we could... </h3>
+
+                <p>
+                    Meet me at 3 AM in the field behind the dorms. Follow me down the railroad tracks, through the fields and out again. Once we see the hill we will climb until we get to the old radio tower. The southern horizon is glowing like a sunrise gone wrong but don’t worry, it’s just the distant city. It’s too dark to see the path we walked to get here. Join me under the tower. We are going to talk to God.
+                </p>
+
+            </div>
+        </div>
+
         <div id="buttons">
             <button id="pass"><i class="fa-solid fa-x"></i></button>
             <button id="match"><i class="fa-solid fa-heart"></i></button>
@@ -234,6 +313,8 @@
             <p> </p>
         </footer>
 
+
+    </div>
 
     </div>
 </body>

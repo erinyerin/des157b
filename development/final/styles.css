@@ -55,14 +55,28 @@ h1, h2, h3, h4, h5, h6, p, ul, li{
 }
 /* end resets */
 
+body{
+    background-color: black;
+}
+
+#iphone{
+    width: 415px;
+    height: 849px;
+    background-image: url('images/iphoneFrame.png');
+    margin: auto;
+    margin-top: 50px;
+}
+
 #container{
     width: 360px;
     height: 800px;
     background-color: #222222;
     margin: auto;
+    top: 25px;
     color: white;
     position: relative;
     overflow: scroll;
+    border-radius: 50px;
 }
 
 a, a:visited, a:hover, a:active {
@@ -207,6 +221,49 @@ button{
     display: none;
 }
 
+#introModal{
+    box-sizing: border-box;
+    background-color:#4F4F4F;
+    width: 300px;
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    border: solid 1px white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+#introModal h2{
+    font-family: "Amarante";
+    margin: 1em 10px;
+    margin-left: 10px;
+    font-size: 24px;
+}
+
+#introModal p{
+    font-family: 'Old Standard TT';
+    font-size: 14px;
+    line-height: 1.5em;
+    margin: 10px;
+}
+
+#close{
+    all: unset;
+    font-family: 'astloch';
+    font-weight: 700;
+    font-size: 24px;
+    text-decoration: underline;
+    background-color: none;
+    border: none;
+    cursor: pointer;
+    padding-top: 10px;
+
+}
+
 /**  end home page   **/
 
 /** for matches page **/
@@ -300,7 +357,7 @@ button{
     width: 100%;
     position: sticky;
     bottom: 0;
-    background-color:#222222
+    background-color:#222222;
 }
 
 #textBox{
@@ -315,6 +372,7 @@ button{
 #textBox p{
     margin: 0;
     padding: 0.5em;
+    color: #5f5f5f;
 }
 
 #textBox i{
@@ -335,7 +393,7 @@ button{
 
 #dialogueOptions ul{
     margin: 14px 0px;
-    padding-left: 14px;
+    padding-left: 0px;
 }
 
 #dialogueOptions li{
@@ -348,4 +406,114 @@ button{
     overflow-y: auto;
     height: calc(100vh - 320px);
 }
+
+#nathanielDialogue {
+    overflow-y: auto;
+    height: calc(100vh - 320px);
+}
+
+.captcha{
+    display: flex;
+    background-color: #F5F5F5;
+    color: black;
+    font-size: 16px;
+    gap: 10px;
+    align-items: center;
+    padding: 10px;
+    border: solid rgb(102, 102, 102) 1px;
+    border-radius: 2px;
+}
+
+.captcha img{
+    margin: 0;
+    border-radius: 0;
+}
+
+form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+input[type="checkbox"] {
+  width: 1em;
+  height: 1em;
+
+}
+
+#imageCaptcha{
+    display: flex;
+    flex-direction: column;
+}
+
+#imageCaptcha img{
+    max-width: 170px;
+    display: inline;
+}
+
+.endingButton{
+    background-color: #5C5151;
+    border: none;
+    border-radius: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+#endingModal{
+    box-sizing: border-box;
+    background-color:#4F4F4F;
+    padding: 20px;
+    width: 300px;
+    height: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow-y: scroll;
+    z-index: 1;
+    border: solid 1px white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+#endingModal h2{
+    font-family: "Amarante";
+    margin: 1em 10px;
+    margin-left: 10px;
+    font-size: 24px;
+}
+
+#endingModal p{
+    font-family: 'Old Standard TT';
+    font-size: 14px;
+    line-height: 1.5em;
+    margin: 10px;
+}
+
+#endingModal a{
+    text-decoration: underline;
+}
+
+#beginAgain{
+    font-size: 14px;
+    border: solid 1px white;
+    margin-left: 10px;
+}
+
 /**   end dialogue page.  **/
+
+/** cursors **/
+#matchNavButton{cursor: pointer;}
+
+#homeNavButton{cursor: pointer;}
+
+#infoNavButton{cursor: pointer;}
+
+#match{cursor: pointer;}
+
+#pass{cursor: pointer;}
+
+#chatWithOlimpia{cursor: pointer;}
+
+#chatWithNathaniel{cursor: pointer;}

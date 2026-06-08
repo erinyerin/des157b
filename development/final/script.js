@@ -145,56 +145,79 @@
     async function loadDialogue() {
         const result = await fetch("dialogue.json");
         dialogueData = await result.json();
-        displayText("A1");
+        if (document.querySelector('#olimpiaDialogue')){
+           displayText("A1"); 
+        }
+        else if (document.querySelector('#nathanielDialogue')){
+           displayText("K1"); 
+        }
+        
     }
 
     function displayText(key) {
         
         const node = dialogueData[key];
 
-        if (!node) {
-            console.error(`Missing dialogue key: ${key}`);
-            return;
+        if (key === "ending") {
+            document.querySelector("#dialogueOptions").innerHTML = node.content;
+            document.querySelectorAll(".endingButton").forEach(button => {
+                button.addEventListener("click", function() {
+                    document.querySelector("#endingModal").classList.remove("hidden");
+                });
+            });
         }
 
-        if (node.speaker === "user") {
+        else if (node.speaker === "user") {
             appendMessage(node.content, "sentMessage");
             displayText(node.next);
 
-        } else {
+        } 
+        
+        else if (node.speaker === "captcha") {
+            appendMessage(node.content, "receivedMessage");
+            const checkboxes = document.querySelectorAll(".captcha input[type='checkbox']");
+            const latestCheckbox = checkboxes[checkboxes.length - 1];
+            latestCheckbox.addEventListener("click", function() {
+                setTimeout(() => {
+                    displayText(node.next);
+                }, 1000) 
+            });
+
+        }
+        
+        else {
             appendMessage(node.content, "receivedMessage");
             const ul = document.querySelector("#dialogueOptions ul");
             ul.innerHTML = "";
 
-            node.options.forEach(optionKey => {
+            if (node.options){
+                node.options.forEach(optionKey => {
+                    const optionNode = dialogueData[optionKey];
 
-            if (!node) {
-                console.error(`Missing dialogue key: ${key}`);
-                return;
-            }
+                    const li = document.createElement("li");
+                    li.innerHTML = optionNode.content;
+                    li.addEventListener("click", () => {
+                        appendMessage(optionNode.content, "sentMessage");
+                        setTimeout(() => {
+                            displayText(optionNode.next);
+                        }, 1000)
 
-                const optionNode = dialogueData[optionKey];
-
-                const li = document.createElement("li");
-                li.textContent = optionNode.content;
-                li.addEventListener("click", () => {
-                    appendMessage(optionNode.content, "sentMessage");
-                    setTimeout(() => {
-                        displayText(optionNode.next);
-                    }, 1000)
-
+                    });
+                    ul.appendChild(li);
                 });
-                ul.appendChild(li);
-            });
+            }
+            else{
+                displayText(node.next)
+            }
         }
     }
 
     function appendMessage(text, className) {
-        const messages = document.getElementById("olimpiaDialogue");
-        const p = document.createElement("p");
-        p.className = className;
-        p.textContent = text;
-        messages.appendChild(p);
+        const messages = document.querySelector('.dialogue')
+        const div = document.createElement("div");
+        div.className = className;
+        div.innerHTML = text;
+        messages.appendChild(div);
         messages.scrollTop = messages.scrollHeight; //auto scroll
     }
 
@@ -231,6 +254,31 @@
 
     if (document.querySelector('#olimpiaDialogue')){
         loadDialogue()
+    }
+
+    if (document.querySelector('#nathanielDialogue')){
+        loadDialogue()
+    }
+
+    if (document.querySelector('#chatWithNathaniel')){
+        chatWithNathaniel.addEventListener('click', function(){
+            window.location.href="nathanielChat.html"
+        })
+    }
+
+    if (document.querySelector('#beginAgain')){
+        document.querySelector('#beginAgain').addEventListener('click', function(){
+            window.location.href = 'index.html'
+        })
+    }
+
+    if (document.querySelector('#introModal')){
+        infoNavButton.addEventListener('click', function(){
+            document.querySelector('#introModal').classList.remove('hidden')
+        })
+        document.querySelector('#close').addEventListener('click', function(){
+            document.querySelector('#introModal').classList.add('hidden')
+        })
     }
 
 })()
