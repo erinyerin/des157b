@@ -113,25 +113,47 @@
             <h2>User Interface</h2>
             <div class="content">
                 <div class="column">
-                    <p>Laborum before they sold out consequat officia pinterest culpa. Butcher nulla everyday carry coloring book kickstarter. Keytar cold-pressed fugiat coloring book. Meggings etsy skateboard occaecat, palo santo tumblr laborum kitsch cornhole tilde beard quinoa trust fund blog pabst.</p>
+                    <div style="display: flex; gap: 20px;">
 
-                    <p>Bushwick cardigan literally tote bag meh. Knausgaard aute ullamco, humblebrag fanny pack schlitz pop-up enim tattooed kickstarter. Hammock magna eu sint tbh. Pour-over beard retro truffaut freegan.Try-hard kombucha helvetica, post-ironic gastropub vape intelligentsia fam fixie non sunt portland skateboard raclette. Narwhal messenger bag keytar church-key. Gochujang gluten-free PBR&B thundercats. Knausgaard quis umami fingerstache YOLO. Intelligentsia selvage gentrify poutine sunt craft beer kombucha ut cupidatat tbh pour-over.</p>
+                    <div style="flex: 2;">
+
+                    
+                    <p>
+                        My project is meant to be open ended to the user so that it can be a exploration on their end without too many spoilers on what it’s about. So, the function of the UI design was to guide the user explore the parts of the project they hadn’t yet explored yet. 
+                    </p>
+
+                    <p>
+                        The homepage of the project listing all of the dating profiles utilizes familiar patterns of liking or passing on profiles in dating apps, making it a pretty straightforward navigation. My biggest navigation challenges, however, were prompting the user to move on to chat with one of the characters after they ‘liked’ a profile, and differentiating between interactable characters and non-interactable characters. Ultimately, I would like to further develop this project so all characters are interactable, but I focused on my two most salient profiles to stay within a manageable scope for this quarter.
+
+                    </p>
+                    <p>
+                        For the first challenge, I used setTimeOut to send the user an alert after they click ‘like’ on an interactable character letting them know that they ‘received’ a new chat. After they receive this alert, the chat icon in the navigation bar is updated with a green dot to indicate there is new information to be explored there. If the user clicks on the chat button before matching with any profiles, the chat page prompts the user to like more profiles to receive a message. 
+
+                    </p>
+
+                    <div class="imageGrid">
+                        <img src="images/Screenshot 2026-06-12 at 1.11.13 AM.png" alt="">
+                        <img src="images/Screenshot 2026-06-12 at 1.12.41 AM.png" alt="">
+                        <img src="images/Screenshot 2026-06-12 at 1.12.52 AM.png" alt="">
+
+                    </div>
+                    </div>
+
+                    <img src="images/Screenshot 2026-06-12 at 1.08.18 AM.png" alt="" style="min-width: 0; flex: 1;">
+                
                 </div>
 
-                <div class="column">
-                    <p>Laborum before they sold out consequat officia pinterest culpa. Butcher nulla everyday carry coloring book kickstarter. Keytar cold-pressed fugiat coloring book. Meggings etsy skateboard occaecat, palo santo tumblr laborum kitsch cornhole tilde beard quinoa trust fund blog pabst.</p>
+                <div style="display: flex; gap: 20px;">
+                    <p style="flex: 2;">
+                        To help users differentiate between interactable characters and non-interactable characters, I used cues within the chat page. Users are still able to like the profiles of non-interactable characters to keep it feeling like a realistic dating app, but the characters will not 'match back' and send a chat notification like the interactable ones - much like how an interaction can go in a real dating app. For non-interactable characters, the navigation arrow into their chat page is grayed out, and text indicates that the user's match has been denied to prevent the user from trying to navigate to a non-existent page. 
+                    </p>
 
-                    <ol>
-                        <li>Bushwick cardigan literally tote bag meh.</li>
-                        <li>Hammock magna eu sint tbh.</li>
-                        <li>Narwhal messenger bag keytar church-key.</li>
-                        <li>Knausgaard quis umami fingerstache YOLO.</li>
-                    </ol>
+                    <img src="images/Screenshot 2026-06-12 at 1.01.44 AM.png" alt="" style="min-width: 0; flex: 1;">
                 </div>
-                <div>
-                    <img src="https://via.placeholder.com/400x600">
-                    <img src="https://via.placeholder.com/400x600">
+
+                    
                 </div>
+                
             </div>
         </div>
     </section>
@@ -141,11 +163,18 @@
         <div class="container">
             <h2>Revisions</h2>
             <div class="content">
-                <p>Laborum before they sold out consequat officia pinterest culpa. Butcher nulla everyday carry coloring book kickstarter. Keytar cold-pressed fugiat coloring book. Meggings etsy skateboard occaecat, palo santo tumblr laborum kitsch cornhole tilde beard quinoa trust fund blog pabst.</p>
+                <p>
+                    Through usability testing, I found that users found the project's dialogue authentically reflected their personal experiences with AI chatbot interactions. Testers recognized familiar behaviors like sycophancy, unprompted validation, and engagement-baiting, drawing direct comparisons to ChatGPT, with one user even mentioning that Olimpia’s character reminded them of Sewell Setzer’s story. This suggests that the project successfully surfaced the uncanny qualities of AI conversation in an unexpected intimate context, prompting users to think more critically about their relationships with these tools. 
+                </p>
 
-                <p>Bushwick cardigan literally tote bag meh. Knausgaard aute ullamco, humblebrag fanny pack schlitz pop-up enim tattooed kickstarter. Hammock magna eu sint tbh. Pour-over beard retro truffaut freegan.Try-hard kombucha helvetica, post-ironic gastropub vape intelligentsia fam fixie non sunt portland skateboard raclette. Narwhal messenger bag keytar church-key. Gochujang gluten-free PBR&B thundercats. Knausgaard quis umami fingerstache YOLO. Intelligentsia selvage gentrify poutine sunt craft beer kombucha ut cupidatat tbh pour-over.</p>
+                <p>
+                    The ending modals describing the real life stories that inspired each character were added after the user’s comment about Sewell Setzer during the initial testing. The modals serve to remind users that although the project presents these scenarios in a fictionalized and humorous way, the problems it explores have and continue to affect the lives of real people. During the final presentation, I noticed a significant tone shift in the user’s feedback from lighthearted laughter to more serious reflection after they reached the ending of each conversation. 
+                </p>
 
-                <img src="https://via.placeholder.com/400x600">
+                <p>
+                    Some smaller UI changes that were made after user testing include looping the profiles on the homepage, as users tried to browse past the single available profile before committing to an interaction. The looping mechanism allows users to explore all of the content before being redirected to a different aspect of the project. Additionally, many users found the project very text heavy. As of now, I wasn’t able to implement a good solution, as the text narrative was so central to the project. Possible solutions I’d like to explore in the future is animating the message texts using GSAP to imitate the typing motions that ChatGPT and other chatbots use in their interface. This could serve as another hint at the characters’ inhumanity, and make the reading process more engaging for users. 
+                </p>
+
             </div>
         </div>
     </section>
@@ -155,21 +184,27 @@
         <div class="container">
             <h2>Summary</h2>
             <div class="content">
-                <p>Laborum before they sold out consequat officia pinterest culpa. Butcher nulla everyday carry coloring book kickstarter. Keytar cold-pressed fugiat coloring book. Meggings etsy skateboard occaecat, palo santo tumblr laborum kitsch cornhole tilde beard quinoa trust fund blog pabst.</p>
+                <p>
+                    The biggest challenge I faced during this project was how open ended it was. I felt a lot of pressure to come up with some sort of solution as a result of the human-centered design training we get as design students. A pivotal moment during the process that really shaped my final product was when I decided to lean into the storytelling aspect of design, and asked myself how I could use narrative to prompt the user to think about a problem differently rather than present them with a tidy solution. 
+                </p>
 
-                <p>Bushwick cardigan literally tote bag meh. Knausgaard aute ullamco, humblebrag fanny pack schlitz pop-up enim tattooed kickstarter. Hammock magna eu sint tbh. Pour-over beard retro truffaut freegan.Try-hard kombucha helvetica, post-ironic gastropub vape intelligentsia fam fixie non sunt portland skateboard raclette.</p>
+                <p>
+                    This was a lot of fun for me, as I had been an avid fiction writer as a high schooler. The reframe allowed me to express my silliness, irony, and personal narrative style, and I think that led to a much more memorable and interesting final result. It was very rewarding when the my users caught the little details I had included and shared a laugh with me during the final presentation showcase. 
 
-                <p>Narwhal messenger bag keytar church-key. Gochujang gluten-free PBR&B thundercats. Knausgaard quis umami fingerstache YOLO. Intelligentsia selvage gentrify poutine sunt craft beer kombucha ut cupidatat tbh pour-over.</p>
+                </p>
+
+                <p>
+                    This project was also more technically complex than anything I’ve tried to implement in the past. The branching dialogue option was the most difficult to figure out logically, and it took a lot of patience and research into different ways of doing that until I got it to function exactly as I wanted. I tend to struggle with details, so this process challenged me to hone into every function and thoroughly test as I coded to make sure each new feature I added worked well with the rest. I’ve come out of this process much more confident in my ability to write code that behaves how I want it to. 
+                </p>
             </div>
-            <img src="https://via.placeholder.com/1000x300">
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>UX/UI Case Study Title Here</p>
-            <p>Your Name Here</p>
-            <address>Your email address (encoded so you don't get spam)</address>
+            <p>The Ghost in the Machine - A Case Study</p>
+            <p>Erin Park</p>
+            <address>&#101;&#114;&#105;&#112;&#097;&#114;&#107;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;</address>
             <p><a href="#top">top</a></p>
         </div>
     </footer>
