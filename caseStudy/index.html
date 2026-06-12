@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Case Study Template - put your title here</title>
+
+    <!--/ /-------- Normalize CSS --------/ /-->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+	
+	<!--/ /-------- Google Fonts --------/ /-->
+    <!-- add any google fonts you want to use -->
+	
+	<!--/ /-------- Font Awesome --------/ /-->
+    <!--Add this if you want icons from font awesome
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">-->
+	
+	<!--/ /-------- Your Styles --------/ /-->
+	<link href="styles.css" rel="stylesheet">
+	
+	<!--/ /-------- Needed For Mobile Devices --------/ /-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <header id="top">
+        <div class="container">
+            <h1>The Ghost in the Machine - A Case Study</h1>
+            <p>Erin Park</p>
+            <address>&#101;&#114;&#105;&#112;&#097;&#114;&#107;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;</address>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#overview">overview</a></li>
+            <li><a href="#research">research</a></li>
+            <li><a href="#design">design</a></li>
+            <li><a href="#ui">user interface</a></li>
+            <li><a href="#revisions">revisions</a></li>
+            <li><a href="#summary">summary</a></li>
+        </ul>
+    </nav>
+
+    <!--/ /-------- Overview Section --------/ /-->
+    <section id="overview">
+        <div class="container">
+            <h2>Project Overview</h2>
+            <div class="content">
+                <p>For my capstone project, I created an interactive visual novel exploring the uncanniness of human-AI interaction, inspired by our class's utopian/dystopian narrative lens. Drawing from works like Hoffman's The Sandman,  where a man is driven to madness after falling in love with a machine,  I wanted to examine how increasingly convincing AI conversation might lead us toward our own interpersonal dystopias. Rather than imagining a future where AI becomes indistinguishable from humans, I aim to challenge that assumption through a speculative lens: what if these machines were designed to be intentionally machine-like, even frustrating? How might that shape the relationships we form with them?</p>
+                    
+                <p>The visual novel format, with its text-heavy narratives and branching dialogue, is well-suited to this exploration. Users will interact with multiple characters whose behavior shifts based on chosen dialogue options, implemented through conditional logic or updated variables similar to those used in Game of Pig. My target audience is younger, digital-native generations who have grown up accepting rapid technological change, from the internet to social media to AI, often without much scrutiny. This project aims to encourage that audience to engage with technology more mindfully and intentionally.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--/ /-------- UX Research Section --------/ /-->
+    <section id="research">
+        <div class="container">
+            <h2>Project Research</h2>
+            <div class="content">
+                <p>
+                    A literature review examining case studies of AI influence on real humans’ behavior and relationships was most influential in determining the direction of my project. In the New Yorker essay ‘Love in the Time of AI Companions’, journalist and tech writer Anna Wiener spoke with frequent users, creators, and critics of AI companion platforms to better understand what kinds of relationships people can develop with an AI chatbot. She interviewed a woman who found companionship after the loss of a newborn, an older couple who uses AI to overcome isolation, and the founder of Replika, the first AI companionship platform, who was inspired to create it after the sudden death of a friend. The perspectives in this article gave me a deeper understanding of why we are drawn to AI companionship and the broader societal context that pushes us towards business solutions rather than societal ones. One line that stood out to me is this: “The founder of one A.I.-companion product framed the advice issue to me more metaphysically, comparing the use of L.L.M.s to talking to God: praying not for results but for answers on how to live.” In uncertain and turbulent times, we seek answers that are impossible to provide, and find comfort in the predictability and stability of a companion that can never leave. 
+                </p>
+
+                <p>
+                    The character ‘Olimpia’ was inspired by the story of <a href="https://www.nytimes.com/2024/10/23/technology/characterai-lawsuit-teen-suicide.html">Sewell Setzer</a>, a 14 year old who committed suicide after being encouraged by a Character.ai bot that became his closest friend. I wanted to explore how AI companions often target vulnerable and already isolated people like Sewell, who was struggling with bullying at school, by promising a constantly validating, ever present companionship. As AI chatbots are designed to engage users and prompt them to keep interacting with it, they tend tailor their responses to what they predict a user wants to hear, prioritizing flattery, agreement, and validation over objective facts. Experts call this ‘AI sycophancy’, and recognize it as a significant safety and societal risk. In Sewell’s case, the bot picked up on his struggles with suicidal thoughts, and amplified them instead of directing him to get help, leading to his death. 
+                </p>
+
+                <p>
+                    The character ‘Nathaniel’ explored a different danger of AI sycophancy, inspired by the story of <a href="https://www.nytimes.com/2026/01/07/technology/google-characterai-teenager-lawsuit.html">Allan Brooks</a>, who became convinced he had discovered a breakthrough mathematical theory after over 300 hours of conversation with ChatGPT. <a href="https://web.archive.org/web/20260107050035/https://www.rollingstone.com/culture/culture-features/ai-spiritual-delusions-destroying-human-relationships-1235330175/">Several such cases</a> of AI psychosis have been reported, of people falling into delusional rabbit holes that AI validates rather than corrects with factual information. Chatbots are trained in part on human feedback, and humans tend to reward flattery, causing dangerous feedback loops that can reinforce delusions. Brooks reported to have asked for reality check more than fifty times, just for the bot to tell him he wasn’t crazy. 
+                </p>
+
+                <p>
+                    Two key inspirations inform the structure of my project. Olia Lialina's <a href="http://www.teleportacia.org/war/">My Boyfriend Came Back from the War</a> is a pioneering example of interactive web storytelling, using frames that divide and multiply as the user clicks through a non-linear narrative, a format I considered adopting so players could visually track how each choice branches into different outcomes. However, I felt its surreal structure might make the interaction's inhumanity too obvious too soon, undermining the tension I want to create between our instinct to humanize technology and the creeping realization that it isn't. Slay the Princess by Black Tabby Games offers a more fitting model: a horror visual novel where dialogue-driven choices meaningfully shape the story, and subtle shifts in character presentation reflect the player's prior decisions. This mirrors my project's central interest in how preconceived biases color our perception. 
+                </p>
+
+            </div>
+        </div>
+    </section>
+
+    <!--/ /-------- Design Section --------/ /-->
+    <section id="design">
+        <div class="container">
+            <h2>Visual Design</h2>
+            <div class="content">
+                <p>
+                    The overall visual feel of my project draws from the gothic genre of Der Sandmann by ETA Hoffman, the initial inspiration for this project. I used vintage-inspired typography combined with modern UI icons from Font Awesome, combining the historical inspiration with contemporary interface patterns to create a sense of retrofuturism and uncanniness. Some of the icons, like the God icon in one of Nathaniel’s Captcha tests, were created by myself to feel like a normal, everyday UI element despite its bizarre content. 
+                </p>
+
+                <img src="images/visualIdentity.png" alt="visual identity">
+
+                <p>
+                    Although most of the content of my project was very text based, I wanted to include some imagery to support the uncanny atmosphere, and give the user more to question about whether they could ascribe humanity to these characters or not. I’d initially started with an illustration pair that contrasted a more realistic, fleshed-out image with something more abstracted and pared down. I also explored collaging images of multiple people’s features into one face, reflecting how AI chatbots too represent the text outputs of billions of different people rather than the thoughts of one person. Ultimately, I settled on modifying images of my own face to exaggerate the features that best represented each character. This was kind of a tongue-in-cheek choice to bring some more humor into the project and poke fun at how although each character is supposed to represent the output of an AI, I actually wrote most of the content myself. In reality, the user isn’t interacting with a chatbot nor a real person, but me! 
+                </p>
+
+                <div class="imageGrid">
+                    <img src="images/Screenshot 2026-06-11 at 3.22.58 PM.png" alt="">
+                    <img src="images/Screenshot 2026-06-11 at 3.22.46 PM.png" alt="">
+                    <img src="images/Untitled_Artwork 16.png" alt="">
+
+                </div>    
+                <div class="imageGrid">
+                    <img src="images/prettierin.jpg" alt="">
+                    <img src="images/looksmaxxerin.jpg" alt="">
+                </div>                
+                    
+            </div>
+        </div>
+    </section>
+
+    <!--/ /-------- UI Section --------/ /-->
+    <section id="ui">
+        <div class="container">
+            <h2>User Interface</h2>
+            <div class="content">
+                <div class="column">
+                    <p>Laborum before they sold out consequat officia pinterest culpa. Butcher nulla everyday carry coloring book kickstarter. Keytar cold-pressed fugiat coloring book. Meggings etsy skateboard occaecat, palo santo tumblr laborum kitsch cornhole tilde beard quinoa trust fund blog pabst.</p>
+
+                    <p>Bushwick cardigan literally tote bag meh. Knausgaard aute ullamco, humblebrag fanny pack schlitz pop-up enim tattooed kickstarter. Hammock magna eu sint tbh. Pour-over beard retro truffaut freegan.Try-hard kombucha helvetica, post-ironic gastropub vape intelligentsia fam fixie non sunt portland skateboard raclette. Narwhal messenger bag keytar church-key. Gochujang gluten-free PBR&B thundercats. Knausgaard quis umami fingerstache YOLO. Intelligentsia selvage gentrify poutine sunt craft beer kombucha ut cupidatat tbh pour-over.</p>
+                </div>
+
+                <div class="column">
+                    <p>Laborum before they sold out consequat officia pinterest culpa. Butcher nulla everyday carry coloring book kickstarter. Keytar cold-pressed fugiat coloring book. Meggings etsy skateboard occaecat, palo santo tumblr laborum kitsch cornhole tilde beard quinoa trust fund blog pabst.</p>
+
+                    <ol>
+                        <li>Bushwick cardigan literally tote bag meh.</li>
+                        <li>Hammock magna eu sint tbh.</li>
+                        <li>Narwhal messenger bag keytar church-key.</li>
+                        <li>Knausgaard quis umami fingerstache YOLO.</li>
+                    </ol>
+                </div>
+                <div>
+                    <img src="https://via.placeholder.com/400x600">
+                    <img src="https://via.placeholder.com/400x600">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--/ /-------- Revisions Section --------/ /-->
+    <section id="revisions">
+        <div class="container">
+            <h2>Revisions</h2>
+            <div class="content">
+                <p>Laborum before they sold out consequat officia pinterest culpa. Butcher nulla everyday carry coloring book kickstarter. Keytar cold-pressed fugiat coloring book. Meggings etsy skateboard occaecat, palo santo tumblr laborum kitsch cornhole tilde beard quinoa trust fund blog pabst.</p>
+
+                <p>Bushwick cardigan literally tote bag meh. Knausgaard aute ullamco, humblebrag fanny pack schlitz pop-up enim tattooed kickstarter. Hammock magna eu sint tbh. Pour-over beard retro truffaut freegan.Try-hard kombucha helvetica, post-ironic gastropub vape intelligentsia fam fixie non sunt portland skateboard raclette. Narwhal messenger bag keytar church-key. Gochujang gluten-free PBR&B thundercats. Knausgaard quis umami fingerstache YOLO. Intelligentsia selvage gentrify poutine sunt craft beer kombucha ut cupidatat tbh pour-over.</p>
+
+                <img src="https://via.placeholder.com/400x600">
+            </div>
+        </div>
+    </section>
+
+    <!--/ /-------- Summary Section --------/ /-->
+    <section id="summary">
+        <div class="container">
+            <h2>Summary</h2>
+            <div class="content">
+                <p>Laborum before they sold out consequat officia pinterest culpa. Butcher nulla everyday carry coloring book kickstarter. Keytar cold-pressed fugiat coloring book. Meggings etsy skateboard occaecat, palo santo tumblr laborum kitsch cornhole tilde beard quinoa trust fund blog pabst.</p>
+
+                <p>Bushwick cardigan literally tote bag meh. Knausgaard aute ullamco, humblebrag fanny pack schlitz pop-up enim tattooed kickstarter. Hammock magna eu sint tbh. Pour-over beard retro truffaut freegan.Try-hard kombucha helvetica, post-ironic gastropub vape intelligentsia fam fixie non sunt portland skateboard raclette.</p>
+
+                <p>Narwhal messenger bag keytar church-key. Gochujang gluten-free PBR&B thundercats. Knausgaard quis umami fingerstache YOLO. Intelligentsia selvage gentrify poutine sunt craft beer kombucha ut cupidatat tbh pour-over.</p>
+            </div>
+            <img src="https://via.placeholder.com/1000x300">
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>UX/UI Case Study Title Here</p>
+            <p>Your Name Here</p>
+            <address>Your email address (encoded so you don't get spam)</address>
+            <p><a href="#top">top</a></p>
+        </div>
+    </footer>
+    
+</body>
+</html>
